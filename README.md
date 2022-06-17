@@ -51,8 +51,8 @@ In https://hub.docker.com/
 
 Create a yaml file
 
-> touch docker-compose.yaml
+> touch docker-compose.yml
 
 > docker ps
-> docker-compose up -d
+> docker-compose up -d (Will generate the wordpress)
 > docker-compose up
