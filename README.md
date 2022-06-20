@@ -28,7 +28,7 @@ https://www.jenkins.io/
 After start I need to open in http://localhost:8080/ and a password will be required:
 Copy the url provided after start and use the terminal to get the password:
 
-- In terminal: cat <url-privided>
+- In terminal: cat 'url-privided'
 
 <ol>
   <li>Create your account</li>
