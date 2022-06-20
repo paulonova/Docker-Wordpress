@@ -64,22 +64,22 @@ Port range: 22
 
 ## Install Jenkins
 
-### sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+> sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 
-## Jenkings organization signing key
+### Jenkings organization signing key
 
-### sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+> sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 
-## Install Java
+### Install Java
 
-### sudo yum install java-1.8.0
+> sudo yum install java-1.8.0
 
-## Jenkins
+### Jenkins
 
 Install:
 
-### sudo yum install jenkins -y
+> sudo yum install jenkins -y
 
 Run Service:
 
-### sudo systemctl start jenkins.service
+> sudo systemctl start jenkins.service
