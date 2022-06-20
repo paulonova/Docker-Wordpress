@@ -28,7 +28,7 @@ https://www.jenkins.io/
 After start I need to open in http://localhost:8080/ and a password will be required:
 Copy the url provided after start and use the terminal to get the password:
 
-- In terminal: cat 'url-privided'
+## In terminal: cat 'url-privided'
 
 <ol>
   <li>Create your account</li>
@@ -39,3 +39,21 @@ Copy the url provided after start and use the terminal to get the password:
   <li>Scripted Pipeline starts with node {}</li>
   <li>Declarative Pipeline starts with pipeline{}</li>
 </ol>
+
+## Create a Security Group
+
+Inbound rules:
+Port Range: 8080
+
+Port range: 22
+
+## IMPORTANT:
+
+1- After the Security Group go to Launch Instances and run the instance.
+2- Copy the Public DNS (IPV4) url
+3- Create a Key-par (.pem)
+4- In terminal run: chmod 400 my-key-pair.pem to set permition in the Key
+5- Then run:
+ssh -i /Users/paulovilanova/ssh/id_rsa.pem ec2-user@[Public DNS (IPV4)]
+
+<img src="./wp-content/themes/mytheme/assets/images/aws-connection.png">
