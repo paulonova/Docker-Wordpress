@@ -1,46 +1,5 @@
 # Docker – AWS – Wordpress. Documentation
 
-## Install Wordpress via composer:
-
-• Check the if you have composer installed.
-
-> composer –version
-
-• Create environment.
-
-> composer require wp-cli/wp-cli-bundle
-
-• Create a wp-cli environment.
-
-> ln -s vendor/wp-cli/wp-cli/bin/wp ./wp
-
-• Test wp-cli version
-
-> ./wp –version
-
-• Download Wordpress
-
-> ./wp core download
-
-• Run server (need to be running to work)
-
-> ./wp server
-
-### 1- Install mysql server
-
-> https://dev.mysql.com/downloads/mysql/
-
-- Update plugins via CLI
-
-  > ./wp plugin update --all
-
-- Search and Replace
-
-  > ./wp search-replace “http://localhost:8080” “http://localhost:9090”
-
-- Clean the cache
-  > ./wp cache flush
-
 ## Install Wordpress using docker:
 
 Link: https://docs.docker.com/samples/wordpress/
@@ -58,3 +17,25 @@ Create a yaml file
 > docker-compose up -d (Will generate the wordpress)
 
 > docker-compose up
+
+# Jenkins:
+
+https://www.jenkins.io/
+
+• Install the latest LTS version: brew install jenkins-lts
+• Start the Jenkins service: brew services start jenkins-lts
+
+After start I need to open in http://localhost:8080/ and a password will be required:
+Copy the url provided after start and use the terminal to get the password:
+
+- In terminal: cat <url-privided>
+
+<ol>
+  <li>Create your account</li>
+  <li>Set all default installation</li>
+  <li>Create a Job</li>
+  <li>Choose Pipeline</li>
+  <li>Pipeline Script and in the right side choose Scripted Pipeline</li>
+  <li>Scripted Pipeline starts with node {}</li>
+  <li>Declarative Pipeline starts with pipeline{}</li>
+</ol>
