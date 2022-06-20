@@ -49,11 +49,13 @@ Port range: 22
 
 ## IMPORTANT:
 
-1- After the Security Group go to Launch Instances and run the instance.
-2- Copy the Public DNS (IPV4) url
-3- Create a Key-par (.pem)
-4- In terminal run: chmod 400 my-key-pair.pem to set permition in the Key
-5- Then run:
-ssh -i /Users/paulovilanova/ssh/id_rsa.pem ec2-user@[Public DNS (IPV4)]
+<ol>
+<li>After the Security Group go to Launch Instances and run the instance.</li>
+<li>Copy the Public DNS (IPV4) url</li>
+<li>Create a Key-par (.pem)</li>
+<li>In terminal run: chmod 400 my-key-pair.pem to set permition in the Key</li>
+<li>Then run:  ssh -i /Users/paulovilanova/ssh/id_rsa.pem ec2-user@[Public DNS (IPV4)]</li>
+</ol>
+<br>
 
 <img src="./wp-content/themes/mytheme/assets/images/aws-connection.png">
