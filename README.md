@@ -59,3 +59,27 @@ Port range: 22
 <br>
 
 <img src="./wp-content/themes/mytheme/assets/images/aws-connection.png">
+
+<br>
+
+## Install Jenkins
+
+### sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+
+## Jenkings organization signing key
+
+### sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+
+## Install Java
+
+### sudo yum install java-1.8.0
+
+## Jenkins
+
+Install:
+
+### sudo yum install jenkins -y
+
+Run Service:
+
+### sudo systemctl start jenkins.service
